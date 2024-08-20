@@ -8,13 +8,46 @@
   <title>Plerdy landing</title>
   
   <script type="module" crossorigin src="/landing/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/landing/assets/index-5a26a86d.css">
+  <link rel="modulepreload" crossorigin href="/landing/assets/vendor-b1664d58.js">
+  <link rel="stylesheet" href="/landing/assets/index-6b60dc91.css">
 </head>
 
 <body>
   <!-- header -->
+  <header class="border border-b-[1px] border-[#e5e5e5]">
+  <div class="container mx-auto px-[10px] py-[14px] max-w-[360px]">
+    <div class="flex items-center justify-between">
+      <div>Logo Plerdy</div>
+      <svg width="22" height="10" data-menu-open>
+        <use xlink:href="/landing/assets/sprite-bcf816f8.svg#burger"></use>
+      </svg>
+    </div>
+  </div>
+
+  <div
+    class="bg-white container px-[20px] py-[30px] transition-all z-50 fixed top-0  w-screen h-screen flex flex-col justify-between is-hidden"
+    data-menu>
+    <button type="button" class="absolute top-[10px] right-[14px]" data-menu-close>
+      X
+      </svg>
+    </button>
+    <ul class="text-[#7d7d7d] font-semibold text-lg tracking-widest mx-auto">
+      <li><a href="/">Pricing</a></li>
+      <li><a href="/">Use Cases</a></li>
+      <li><a href="/">Book a Demo</a></li>
+    </ul>
+    <div class="space-x-3 mx-auto">
+      <button class="text-lg text-[#5d78ff] leading-6 font-source">Sign In</button>
+      <button class="border rounded-lg px-6 py-[6px] bg-[#5d78ff] text-white leading-6 font-source ">Contact
+        sales</button>
+    </div>
+  </div>
+</header>
+
+  <!-- main content -->
   <main>
   </main>
+  
   <!-- footer -->
   
 </body>
