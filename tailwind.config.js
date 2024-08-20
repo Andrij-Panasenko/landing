@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/index.html', './src/**/*.{ html }'],
+  content: ['./src/index.html', './src/**/*.html'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+        laoto: ['Laoto', 'sans-serif'],
+        source: ['Source Sans Pro', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };
